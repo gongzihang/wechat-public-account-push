@@ -155,7 +155,7 @@ const USER_CONFIG = {
       weather: 3,
     
       // 全网热搜榜（展示N条，最多30条）, 填 0 则不使用，按需关闭不使用的功能可以提高运行速度
-      networkHot: 3,
+      networkHot: 1,
     
       // 全网热搜榜展示类型，默认展示概要信息: ['title': 仅展示标题, 'default': 展示概要信息]
       networkHotType: 'default',
@@ -185,7 +185,7 @@ const USER_CONFIG = {
         // 使用其他通道时，请填写 config/template-config.cjs 中某个想要使用的模板的id
         useTemplateId: '0001',
         // 所在省份或城市，也可以不填
-        province: '山东',
+        province: '济宁',
         // 所在城市或县区
         city: '泗水',
         // 新历生日, 仅用作获取星座运势, 格式必须
@@ -196,29 +196,29 @@ const USER_CONFIG = {
         openUrl: 'https://wangxinleo.cn',
         // 专属节日提醒，如果你在这里填写了节日提醒，就不会执行FESTIVALS的提醒了, 和FESTIVALS的配置方法相同，可以往下查看，我这里就不重复写了
         festivals: [
-          // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
-          {
-            type: '*生日', name: '老婆', year: '1996', date: '09-09',
-          },
+        //   // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
+        //   {
+        //     type: '*生日', name: '小公主', year: '1996', date: '09-09',
+        //   },
           {
             type: '节日', name: '结婚纪念日', year: '2020', date: '09-03',
           },
           // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
           {
-            type: '生日', name: '李四', year: '1996', date: '09-31',
+            type: '生日', name: '小公主', year: '2005', date: '02-20',
           },
           {
-            type: '节日', name: '被搭讪纪念日', year: '2021', date: '09-01',
+            type: '节日', name: '相识纪念日', year: '2023', date: '08-22',
           }
         ],
         // 专属纪念日/倒数日，如果你在这里填写了纪念日/倒数日，就不会计算CUSTOMIZED_DATE_LIST的日子了, 和CUSTOMIZED_DATE_LIST的配置方法相同，可以往下查看，我这里就不重复写了
         customizedDateList: [
           // 在一起的日子
-          { keyword: 'love_day', date: '2022-09-08' },
-          // 结婚纪念日
-          { keyword: 'marry_day', date: '2022-09-09' },
-          // 退伍日
-          { keyword: 'ex_day', date: '2022-09-10' }
+          { keyword: 'love_day', date: '2023-09-17' },
+        //   // 结婚纪念日
+        //   { keyword: 'marry_day', date: '2022-09-09' },
+        //   // 退伍日
+        //   { keyword: 'ex_day', date: '2022-09-10' }
         ],
         // 课程表相关配置
         // 如果courseSchedule不存在或者为空（null）则认为没有课程
@@ -286,47 +286,47 @@ const USER_CONFIG = {
           }
         },
       },
-      {
-        name: '老婆1',
-        id: '',
-        useTemplateId: '',
-        province: '',
-        city: '',
-        horoscopeDate: '',
-        horoscopeDateType: '',
-        openUrl: 'https://wangxinleo.cn',
-        festivals: [],
-        customizedDateList: [],
-        courseSchedule: null
-      },
-      {
-        name: '老婆2',
-        id: '',
-        useTemplateId: '',
-        province: '',
-        city: '',
-        horoscopeDate: '',
-        horoscopeDateType: '',
-        openUrl: 'https://wangxinleo.cn',
-        festivals: [],
-        customizedDateList: [],
-        courseSchedule: null
-      },
-      {
-        name: '老婆3',
-        id: '',
-        useTemplateId: '',
-        province: '',
-        city: '',
-        horoscopeDate: '',
-        horoscopeDateType: '',
-        openUrl: 'https://wangxinleo.cn',
-        festivals: [],
-        customizedDateList: [],
-        courseSchedule: null
-      }
-      // 你可以不断按格式往下增加
-      // ...
+    //   {
+    //     name: '老婆1',
+    //     id: '',
+    //     useTemplateId: '',
+    //     province: '',
+    //     city: '',
+    //     horoscopeDate: '',
+    //     horoscopeDateType: '',
+    //     openUrl: 'https://wangxinleo.cn',
+    //     festivals: [],
+    //     customizedDateList: [],
+    //     courseSchedule: null
+    //   },
+    //   {
+    //     name: '老婆2',
+    //     id: '',
+    //     useTemplateId: '',
+    //     province: '',
+    //     city: '',
+    //     horoscopeDate: '',
+    //     horoscopeDateType: '',
+    //     openUrl: 'https://wangxinleo.cn',
+    //     festivals: [],
+    //     customizedDateList: [],
+    //     courseSchedule: null
+    //   },
+    //   {
+    //     name: '老婆3',
+    //     id: '',
+    //     useTemplateId: '',
+    //     province: '',
+    //     city: '',
+    //     horoscopeDate: '',
+    //     horoscopeDateType: '',
+    //     openUrl: 'https://wangxinleo.cn',
+    //     festivals: [],
+    //     customizedDateList: [],
+    //     courseSchedule: null
+    //   }
+    //   // 你可以不断按格式往下增加
+    //   // ...
     ],
   
     /**
@@ -460,4 +460,5 @@ const USER_CONFIG = {
   }
   
   module.exports = USER_CONFIG
+  
   
