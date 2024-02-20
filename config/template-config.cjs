@@ -56,6 +56,7 @@
 
 // module.exports = TEMPLATE_CONFIG
 
+
 /* eslint-disable */
 const TEMPLATE_CONFIG = [
     {
@@ -99,9 +100,9 @@ const TEMPLATE_CONFIG = [
         
         天气☁️：{{weather.DATA}}
         
-        温度🌡️: {{min_temperature.DATA}}--{{max_temperature.DATA}}
+        温度🌡️: {{tian_api_weather_lowest_{offset}.DATA}}--{{tian_api_weather_highest_{offset}.DATA}}
         
-        风向：{{wind_direction.DATA}}
+        风向：{{tian_api_weather_wind_{offset}.DATA}}
         
         风级：{{wind_scale.DATA}}
         
@@ -139,4 +140,4 @@ const TEMPLATE_CONFIG = [
     },
   ]
   
-  module.exports = TEMPLATE_CONFIG
+  module.exports = TEMPLATE_CONFIGG
