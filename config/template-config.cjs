@@ -7,7 +7,7 @@ const TEMPLATE_CONFIG = [
       desc: `
         **{{date.DATA}}** &ensp; **{{province.DATA}}**·**{{city.DATA}}**
         
-        {{tian_api_morning_greeting.DATA}}
+        早安心语：{{tian_api_morning_greeting.DATA}}
         
         ---
         
@@ -22,12 +22,14 @@ const TEMPLATE_CONFIG = [
         **风级**: {{wind_scale.DATA}}
         
         **温馨提示**：{{notice.DATA}}
+
+        **生活指数**：{{tian_api_weather_tips_0.DATA}}
         
         {{comprehensive_horoscope.DATA}}
         
         ---
         
-        今天是我们相恋的第{{love_day.DATA}}天
+        今天是我们**相恋**的第**{{love_day.DATA}}**天
         
         {{birthday_message.DATA}}
         
@@ -35,34 +37,21 @@ const TEMPLATE_CONFIG = [
         
         💗：{{earthy_love_words.DATA}}
         
-        每日一句😋
-        
-        中文：{{note_ch.DATA}}
-        
-        English：{{note_en.DATA}}
+        每日一句英文😋
+
+        {{note_en.DATA}}
 
         ---
         
         {{moment_copyrighting.DATA}}
         
         {{poetry_title.DATA}} {{poetry_content.DATA}}
-
+        
         ---
 
-        // 🗓️{{date.DATA}}
-        // 城市：{{city.DATA}}
+        今天 龚仔航 也超级超级爱 田雨藤！！！
         
-        // 天气☁️：{{weather.DATA}}
-        
-        // 温度🌡️: {{tian_api_weather_lowest_1.DATA}}--{{tian_api_weather_highest_1.DATA}}
-        
-        // 温馨提示：{{notice.DATA}}
-        
-        // 值得纪念：{{birthday_message.DATA}}
-        
-        
-        
-        // 和{{poetry_author.DATA}}约个会：{{poetry_content.DATA}}
+        **Love U**
       `
     },
     {
