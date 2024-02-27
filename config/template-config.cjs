@@ -3,7 +3,7 @@
 const TEMPLATE_CONFIG = [
     {
       id: '0001',
-      title: '亲爱的小公主, 早上好鸭',
+      title: '亲爱的小公主, 早上好鸭！超级爱你哇！',
       desc: `
         **{{date.DATA}}** &ensp; **{{province.DATA}}**·**{{city.DATA}}**
         
